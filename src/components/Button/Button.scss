@@ -1,0 +1,27 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+button {
+  position: relative;
+  min-width: 168px;
+  min-height: 35px;
+  margin: 28px 0 58px 0;
+  padding: 8px 19px;
+  font-weight: 700;
+  background: $link-color;
+  color: $bt-color;
+  border: none;
+  border-radius: 7px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  @include transition(all 0.5s ease);
+  &:hover {
+    background: darken($link-color, 20%);
+  }
+  &::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    width: 20px;
+  }
+}
