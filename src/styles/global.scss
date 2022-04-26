@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#main {
+  display: flex;
+}
+
 body {
   margin: 0;
   font-family:  'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
@@ -11,5 +15,11 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 

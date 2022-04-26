@@ -1,9 +1,13 @@
+import Sidebar from "./components/Sidebar/Sidebar";
+import Header from "./components/Header/Header";
+
 import './styles/global.scss';
 
 function App() {
   return (
     <>
-      Insurance Portal
+      <Sidebar />
+      <Header />
     </>
   );
 }

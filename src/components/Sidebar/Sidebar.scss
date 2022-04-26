@@ -1,0 +1,15 @@
+.sidebar {
+  width: 306px;
+  min-width: 306px;
+  height: 100vh;
+  padding: 26px 83px 33px 50px;
+  box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 20px 0 20px 20px;
+
+  &_logo {
+    display: flex;
+    svg {
+      width: 40px;
+    }
+  }
+}
