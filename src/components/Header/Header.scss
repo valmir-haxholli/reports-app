@@ -1,7 +1,33 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
 .header {
   width: calc(100% - 306px);
   max-height: 87px;
   padding: 30px 0 36px 55px;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0px 20px 0px 0px;
+
+  a {
+    margin-right: 34px;
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: 400;
+    @include transition(all 0.5s ease);
+    &.active, &:hover {
+      position: relative;
+      color: $link-color;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        @include translate(50%, 50%);
+        right: 50%;
+        width: 16px;
+        height: 2px;
+        background: $link-color;
+        border-radius: 1px;
+      }
+    }
+  }
 }
