@@ -14,6 +14,7 @@
     text-decoration: none;
     font-weight: 400;
     @include transition(all 0.5s ease);
+
     &.active, &:hover {
       position: relative;
       color: $link-color;
@@ -21,12 +22,12 @@
         content: "";
         position: absolute;
         bottom: -5px;
-        @include translate(50%, 50%);
         right: 50%;
         width: 16px;
         height: 2px;
         background: $link-color;
         border-radius: 1px;
+        @include translate(50%, 50%);
       }
     }
   }

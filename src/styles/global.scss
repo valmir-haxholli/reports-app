@@ -16,10 +16,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  h1, h2, h3, p, ul, li, img {
+    margin: 0;
+  }
   h1 {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: $info-color;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    color: $text-color;
   }
 }
 

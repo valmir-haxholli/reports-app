@@ -6,8 +6,11 @@
   box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
   border-radius: 20px 0 20px 20px;
 
-  &_logo {
+  &__logo {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
     svg {
       width: 40px;
     }

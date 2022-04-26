@@ -1,6 +1,8 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
 
+import Avatar from "../Avatar/Avatar";
+
 import './Sidebar.scss';
 
 const Sidebar = () => {
@@ -10,6 +12,7 @@ const Sidebar = () => {
                 <Logo />
                 <h1>Insurance Portal</h1>
             </div>
+            <Avatar />
         </div>
     );
 };
