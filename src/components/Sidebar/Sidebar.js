@@ -8,9 +8,9 @@ import Navigation from "../SidebarLinks/Navigation";
 
 import './Sidebar.scss';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
     return (
-        <div className='sidebar'>
+        <div className={'sidebar' + (isOpen ? ' sidebar-open' : '')}>
             <div className='sidebar__logo'>
                 <Logo />
                 <h1>Insurance Portal</h1>

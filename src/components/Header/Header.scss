@@ -4,22 +4,27 @@
 .header {
   position: fixed;
   top: 0;
-  width: calc(100% - 306px);
+  width: 100%;
   left: 306px;
   max-height: 87px;
   padding: 30px 0 36px 55px;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 20px 0px 0px;
   background: $sidebar-color;
   z-index: 2;
-
+  svg {
+   position: absolute;
+   left: 10px;
+   bottom:32px;
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+  }
   a {
     margin-right: 34px;
     color: $primary-color;
     text-decoration: none;
     font-weight: 400;
     @include transition(all 0.5s ease);
-
     &.active, &:hover {
       position: relative;
       color: $link-color;
