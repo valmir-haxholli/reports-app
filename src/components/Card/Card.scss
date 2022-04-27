@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+.card {
+  width: 314px;
+  display: inline-block;
+  padding: 10px 28px 28px 26px;
+  background: $sidebar-color;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.06);
+  margin-right: 19px;
+  &__price {
+    margin-top: 43px;
+    &_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      h4 {
+        position: relative;
+        font-weight: 400;
+        font-size: 22px;
+        color: $primary-color;
+        span {
+          font-size: 13px;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+    &_range {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #ECECEC 0%, #F2F1F1 111.47%);
+      border-radius: 2px;
+    }
+    .claim_progress {
+      width: calc(100% - 50px);
+      background: linear-gradient(90deg, #713BDB 0%, #A886E9 111.47%);
+    }
+    &_progress {
+      position: absolute;
+      height: 2px;
+      width: calc(100% - 100px);
+      background: linear-gradient(90deg, #33D69F 0%, #50EDB8 111.47%);
+    }
+  }
+  p {
+    color: $primary-color;
+  }
+  h2 {
+    position: relative;
+    font-size: 55px;
+    font-weight: 400;
+    color: $primary-color;
+    span {
+      position: absolute;
+      top: 0;
+      font-size: 35px;
+      color: $link-color;
+    }
+  }
+}
