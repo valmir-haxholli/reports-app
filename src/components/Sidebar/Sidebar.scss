@@ -16,7 +16,18 @@
   border-radius: 20px 0 20px 20px;
   z-index: 2;
   @include transition(all 0.5s ease);
-
+  .log-out {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $text-color;
+    svg {
+      margin-right: 10px;
+    }
+  }
   &__logo {
     display: flex;
     justify-content: space-between;

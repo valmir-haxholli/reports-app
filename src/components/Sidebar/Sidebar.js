@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
+import { ReactComponent as LogOut } from '../../assets/images/log-out.svg';
 
 import Avatar from "../Avatar/Avatar";
 import Button from "../Button/Button";
@@ -18,6 +21,7 @@ const Sidebar = ({ isOpen }) => {
             <Avatar />
             <Button />
             <Navigation />
+            <Link className='log-out' to='/'><LogOut />Log Out</Link>
         </div>
     );
 };
