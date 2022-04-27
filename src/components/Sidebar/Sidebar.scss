@@ -1,11 +1,19 @@
+@import '../../styles/variables.scss';
+
 .sidebar {
   width: 306px;
   min-width: 306px;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
   padding: 26px 83px 33px 50px;
+  background: $sidebar-color;
   text-align: center;
   box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
   border-radius: 20px 0 20px 20px;
+  z-index: 2;
 
   &__logo {
     display: flex;
